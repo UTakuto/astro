@@ -1,30 +1,7 @@
 ---
-import { lang , title , description , x_name , url } from "../const.js";
+import Layout from "../layouts/layout.astro";
 ---
-<!DOCTYPE html>
-<html lang={lang} prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<meta name="keywords" content="">
-<meta name="description" content={description}>
-<title>{title}</title>
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@twitteraccount">
-<meta property="og:site_name" content={x_name}>
-<meta property="og:title" content={title}>
-<meta property="og:description" content={description}>
-<meta property="og:url" content={url}>
-<meta property="og:image" content=`${url}ogp.png`>
-<meta property="og:type" content="website">
-<link rel="shortcut icon" href=`${url}favicon.ico` type="image/vnd.microsoft.icon">
-<link rel="apple-touch-icon" href=`${url}logo.png`>
-
-<link rel="stylesheet" href="css/">
-</head>
-<body>
-<h1>Hello ECC Comp.</h1>
-</body>
-</html>
+<Layout>
+    <h1>Hello ECC Comp.</h1>
+</Layout>
