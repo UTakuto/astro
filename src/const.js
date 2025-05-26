@@ -3,7 +3,7 @@ export const lang = "ja";
 // title
 export const title = "Astro-Practice";
 // description
-export const description = "astro練習用でHTML3からサンプルや課題を参考にしています";
+export const description = "Astro練習用でHTML3からサンプルや課題を参考にしています";
 // x_name
 export const x_name = "ecccomp";
 // url
