@@ -1,7 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import topImage from "../assets/toppage.jpg";
 ---
 
 <Layout>
-    <h1>Hello ECC Comp.</h1>
+    <header>
+        <h1>Hello ECC Comp.</h1>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <picture>
+            <Image src={topImage} alt="toppageImage" width={800} />
+        </picture>
+    </main>
 </Layout>

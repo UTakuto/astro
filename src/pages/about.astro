@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import profileImage from '../assets/profile.jpg';
+---
+
+<Layout>
+    <header>
+        <h1>Hello ECC Comp.</h1>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>ABOUT Page</h2>
+            <picture>
+                <Image src={profileImage} alt="profile Image" width={500} />
+            </picture>
+            <section>
+                <h3>Hi there! I'm ECC太郎</h3>
+                <p>
+                    大阪市在住のWebデザイナー。専門学校ではWebデザインを専攻し、卒業後は制作会社に勤務。UI/UX設計を中心に、さまざまな業種のWebサイトやアプリのデザインを手がけています。休日はカフェ巡りや美術館巡りが趣味。新しいツールやトレンドを取り入れながら、使いやすく美しいデザインを目指しています。
+                </p>
+            </section>
+            <section>
+                <h3>スキル</h3>
+                <ul>
+                    <li>Figma を用いたUI/UXデザイン</li>
+                    <li>アクセシビリティを考慮したデザイン設計</li>
+                    <li>ユーザーインタビュー・ペルソナ設計などのリサーチスキル</li>
+                </ul>
+            </section>
+            <section>
+                <h3>SNS</h3>
+                <ul>
+                    <li><a href="">@X</a></li>
+                    <li><a href="">@instagram</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+</Layout>
